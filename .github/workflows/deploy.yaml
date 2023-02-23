@@ -1,0 +1,32 @@
+name: deploy-test
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    environment: 
+      name: production
+      url: https://github.com
+    steps:
+      - name: step1
+        run : echo "step1"
+      - name: step2
+        run : echo "step2"
+      - name: step3
+        run : echo "step3"
+  job2:
+    runs-on: ubuntu-latest
+    environment: 
+      name: production
+      url: https://github.com
+    steps:
+      - name: step1
+        run : echo "step1"
+      - name: step2
+        run : echo "step2"
+      - name: step3
+        run : echo "step3"
